@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,8 +7,6 @@ import MyTesseractComponent from './MyTesseractComponent.tsx'
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const linkStyle = { margin: '0 10px', textDecoration: 'none', color: '#007bff' };
 
   return (
     <>
