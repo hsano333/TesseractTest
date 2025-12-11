@@ -1,5 +1,7 @@
 
-// src/MyTesseractComponent.tsx
+
+
+// src/MovieMyTesseractComponent.tsx
 
 import React, { useState, useCallback, useMemo } from 'react';
 
@@ -17,7 +19,7 @@ const MyTesseractComponent: React.FC = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [result, setResult] = useState<string>('画像ファイルを選択し、「OCR開始」ボタンを押してください。');
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [language, setLanguage] = useState<string>('eng'); // 認識言語の状態
+  const [language, setLanguage] = useState<string>('jpn'); // 認識言語の状態
 
   /**
    * ファイル入力が変更されたときのハンドラー
@@ -111,9 +113,9 @@ const MyTesseractComponent: React.FC = () => {
           style={{ padding: '5px', marginRight: '10px' }}
           disabled={isLoading}
         >
-            <option value="eng">英語 (eng)</option>
             <option value="jpn">日本語 (jpn)</option>
             <option value="jpn_vert">日本語 (縦書き jpn_vert)</option>
+            <option value="eng">英語 (eng)</option>
             <option value="kor">韓国語 (kor)</option>
         </select>
 
